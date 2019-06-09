@@ -49,14 +49,14 @@
       font-weight: 700;
       left: 1rem;
       position: absolute;
-      top: -1.5rem;
+      top: -1rem;
       transition: $transition;
    }
 
    &__control:placeholder-shown + &__label {
       font-size: 1.6rem;
       opacity: 0;
-      transform: translate(.8rem, 2.5rem);
+      transform: translate(.5rem, 2rem);
       visibility: hidden;
    }
 }
