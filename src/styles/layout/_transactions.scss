@@ -3,6 +3,7 @@
    flex-direction: column;
    grid-row: 2 / -1;
    grid-column: 2 / -1;
+   align-self: start;
 
    @include respond(md) {
       grid-column: 1 / -1;
