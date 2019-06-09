@@ -12,7 +12,7 @@ beforeEach(() => {
 
 describe('COMPONENT - Transaction', () => {
    test('Should render Transaction correctly', () => {
-      wrapper.setProps({ removeHandler: removeHandler });
+      wrapper.setProps({ removeHandler });
       expect(wrapper).toMatchSnapshot();
    });
 
@@ -21,7 +21,7 @@ describe('COMPONENT - Transaction', () => {
    });
 
    test('Should handle removeTransaction', () => {
-      wrapper.setProps({ removeHandler: removeHandler });
+      wrapper.setProps({ removeHandler });
       wrapper.find('button').simulate('click');
       expect(removeHandler).toHaveBeenCalled();
    });

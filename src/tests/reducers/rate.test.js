@@ -8,7 +8,7 @@ describe('REDUCER - rate', () => {
    });
 
    test('Should set rate value', () => {
-      const state = rateReducer(undefined, { type: SET_EXCHANGE_RATE, rate: 4.43432 });
+      const state = rateReducer(0, { type: SET_EXCHANGE_RATE, rate: 4.43432 });
       expect(state).toBe(4.43432);
    });
 });
