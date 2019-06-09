@@ -1,0 +1,26 @@
+.transaction {
+   display: flex;
+   justify-content: space-between;
+   padding: $s-size;
+   transition: $transition;
+
+   &:not(:last-child) {
+      border-bottom: .1rem solid $lighten-blue;
+   }
+
+   &:hover {
+      background: $lighten-blue;
+   }
+
+   &__data {
+      word-break: break-all;
+   }
+
+   &__value {
+      font-size: 1.4rem;
+   }
+
+   &__btn {
+      align-self: center;
+   }
+}

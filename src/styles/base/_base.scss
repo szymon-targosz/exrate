@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-size: 62.5%;
+
+   @include respond(lg) {
+      font-size: 56.25%;
+   }
+}
+
+body {
+   background: $dark-blue;
+   box-sizing: border-box;
+   color: $off-white;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 1.6rem;
+   min-height: 100vh;
+   padding-bottom: $xl-size;
+}
+
+button {
+   cursor: pointer;
+
+   &:disabled {
+      cursor: not-allowed;
+   }
+}
+
+.container {
+   max-width: 80rem;
+   margin: 0 auto;
+   padding: 0 $m-size;
+
+   @media only screen and (max-width: $breakpoint-m) {
+      padding: 0 $s-size;
+   }
+}
+
+.error {
+   font-style: italic;
+   font-size: 1.4rem;
+   padding: $s-size;
+   text-align: center;
+}

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - TransactionsTotal Should render TransactionsTotal correctly 1`] = `
+<section
+  className="total"
+>
+  <InfoBox
+    data="583,07 € / 1 826,36 PLN"
+    description="Total (7 transactions)"
+  />
+</section>
+`;

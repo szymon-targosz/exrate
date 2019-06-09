@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App Should render App correctly 1`] = `
+<Fragment>
+  <Header />
+  <section
+    className="content container"
+  >
+    <Connect(DefineRate) />
+    <Connect(AddTransaction) />
+    <Connect(HighestTransaction) />
+    <Connect(Filters) />
+    <Connect(Transactions) />
+  </section>
+</Fragment>
+`;

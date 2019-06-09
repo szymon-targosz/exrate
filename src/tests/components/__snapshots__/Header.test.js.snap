@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Header Should render Header correctly 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <h1
+      className="header__title"
+    >
+      Exrate
+    </h1>
+  </div>
+</header>
+`;

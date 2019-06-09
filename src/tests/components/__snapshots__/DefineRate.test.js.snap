@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - DefineRate Should render DefineRate correctly 1`] = `
+<section
+  className="define-rate"
+>
+  <SectionHeader
+    cssClasses="define-rate__header"
+    title="Set exchange rate"
+  />
+  <div
+    className="define-rate__form p-s"
+  >
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "id": "rate-input",
+          "placeholder": "Exchange rate",
+          "type": "text",
+          "value": 0,
+        }
+      }
+      cssClasses="input__control--short"
+      elementType="input"
+      label={true}
+    />
+  </div>
+  <div
+    className="define-rate__current"
+  >
+    <InfoBox
+      data="1,00 € = 0,00 PLN"
+      description="Current exchange rate"
+    />
+  </div>
+</section>
+`;

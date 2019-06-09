@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Transactions Should render Transactions correctly 1`] = `
+<section
+  className="transactions"
+>
+  <SectionHeader
+    cssClasses="transactions__header"
+    title="Transactions"
+  >
+    <button
+      className="btn btn--link"
+      disabled={false}
+      onClick={[MockFunction]}
+    >
+      Remove All
+    </button>
+  </SectionHeader>
+  <div
+    className="transactions__content"
+  >
+    <div
+      className="transactions__list"
+    >
+      <Transaction
+        key="1"
+        rate={4.46}
+        removeHandler={[Function]}
+        transaction={
+          Object {
+            "amount": 41,
+            "id": "1",
+            "name": "Bills",
+          }
+        }
+      />
+      <Transaction
+        key="2"
+        rate={4.46}
+        removeHandler={[Function]}
+        transaction={
+          Object {
+            "amount": 299.99,
+            "id": "2",
+            "name": "new phone",
+          }
+        }
+      />
+      <Transaction
+        key="3"
+        rate={4.46}
+        removeHandler={[Function]}
+        transaction={
+          Object {
+            "amount": 110.7,
+            "id": "3",
+            "name": "headphones",
+          }
+        }
+      />
+    </div>
+    <TransactionsTotal
+      quantity={3}
+      rate={4.46}
+      total={451.69}
+    />
+  </div>
+</section>
+`;
+
+exports[`COMPONENT - Transactions Should render Transactions with empty message 1`] = `
+<section
+  className="transactions"
+>
+  <SectionHeader
+    cssClasses="transactions__header"
+    title="Transactions"
+  >
+    <button
+      className="btn btn--link"
+      disabled={true}
+      onClick={[MockFunction]}
+    >
+      Remove All
+    </button>
+  </SectionHeader>
+  <div
+    className="transactions__content"
+  >
+    <div
+      className="transactions__list"
+    >
+      <p
+        className="transactions__info p-m"
+      >
+        There is no transaction
+      </p>
+    </div>
+    <TransactionsTotal
+      quantity={0}
+      rate={0}
+      total={0}
+    />
+  </div>
+</section>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - HighestTransaction Should not render HighestTransaction if there is no transaction 1`] = `""`;
+
+exports[`COMPONENT - HighestTransaction Should render HighestTransaction correctly 1`] = `
+<section
+  className="highest"
+>
+  <SectionHeader
+    title="Highest transaction"
+  />
+  <Transaction
+    rate={4.46}
+    transaction={
+      Object {
+        "amount": 41,
+        "id": "1",
+        "name": "Bills",
+      }
+    }
+  />
+</section>
+`;

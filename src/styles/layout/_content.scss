@@ -1,0 +1,51 @@
+.content {
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   grid-template-rows: repeat(4, min-content) 1fr;
+   grid-gap: 2rem;
+   margin-top: $xl-size;
+
+   @include respond(md) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: $s-size;
+      margin-top: $l-size;
+   }
+
+   @include respond(sm) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.filters {
+   @include respond(md) {
+      grid-column: 2 / -1;
+      grid-row: 2 / 3;
+   }
+   
+   @include respond(sm) {
+      grid-column: auto;
+      grid-row: auto;
+   }
+}
+
+.highest {
+   @include respond(md) {
+      grid-column: 1 / -1;
+   }
+}
+
+.define-rate,
+.add-transaction,
+.transactions,
+.highest,
+.filters {
+   background: $light-blue;
+   border-radius: $radius;
+
+   .section-header {
+      background: $blue;
+      border-top-left-radius: $radius;
+      border-top-left-radius: $radius;
+      padding: $s-size;
+   }
+}

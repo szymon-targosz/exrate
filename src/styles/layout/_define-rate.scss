@@ -1,0 +1,18 @@
+.define-rate {
+   display: grid;
+   grid-column: 1 / -1;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: min-content min-content;
+
+   &__header {
+      grid-column: 1 / -1;
+   }
+
+   &__current {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      justify-self: end;
+      justify-content: flex-end;
+   }
+}

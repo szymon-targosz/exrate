@@ -1,0 +1,10 @@
+.info-box {
+   padding: $s-size;
+   text-align: right;
+
+   &__description {
+      color: $primary;
+      font-size: 1.5rem;
+		margin-bottom: 4px;
+   }
+}

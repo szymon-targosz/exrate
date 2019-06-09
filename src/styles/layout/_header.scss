@@ -1,0 +1,11 @@
+.header {
+   background: $off-black;
+   color: #fff;
+   padding: $m-size 0;  
+
+   &__title {
+      font-size: $l-size;
+      line-height: 1.7;
+      letter-spacing: 2px;
+   }
+}

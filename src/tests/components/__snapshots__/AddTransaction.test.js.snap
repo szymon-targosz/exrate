@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - AddTransaction Should block submit if the name is already taken 1`] = `
+<section
+  className="add-transaction"
+>
+  <SectionHeader
+    title="Add transaction"
+  />
+  <form
+    className="p-s"
+    onSubmit={[Function]}
+  >
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "name-input",
+          "name": "name",
+          "placeholder": "Name",
+          "ref": Object {
+            "current": null,
+          },
+          "type": "text",
+          "value": "Bills",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "amount-input",
+          "name": "amount",
+          "placeholder": "Amount (EUR)",
+          "type": "text",
+          "value": "499.1",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <p
+      className="error"
+    >
+      Name already taken
+    </p>
+    <button
+      className="btn btn--block"
+      disabled={false}
+    >
+      Add
+    </button>
+  </form>
+</section>
+`;
+
+exports[`COMPONENT - AddTransaction Should block submit if the name is an empty string 1`] = `
+<section
+  className="add-transaction"
+>
+  <SectionHeader
+    title="Add transaction"
+  />
+  <form
+    className="p-s"
+    onSubmit={[Function]}
+  >
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "name-input",
+          "name": "name",
+          "placeholder": "Name",
+          "ref": Object {
+            "current": null,
+          },
+          "type": "text",
+          "value": "    ",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "amount-input",
+          "name": "amount",
+          "placeholder": "Amount (EUR)",
+          "type": "text",
+          "value": "499.1",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <p
+      className="error"
+    >
+      Please enter the transaction name
+    </p>
+    <button
+      className="btn btn--block"
+      disabled={false}
+    >
+      Add
+    </button>
+  </form>
+</section>
+`;
+
+exports[`COMPONENT - AddTransaction Should render AddTransaction correctly 1`] = `
+<section
+  className="add-transaction"
+>
+  <SectionHeader
+    title="Add transaction"
+  />
+  <form
+    className="p-s"
+    onSubmit={[Function]}
+  >
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "name-input",
+          "name": "name",
+          "placeholder": "Name",
+          "ref": Object {
+            "current": null,
+          },
+          "type": "text",
+          "value": "",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "amount-input",
+          "name": "amount",
+          "placeholder": "Amount (EUR)",
+          "type": "text",
+          "value": "",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <button
+      className="btn btn--block"
+      disabled={true}
+    >
+      Add
+    </button>
+  </form>
+</section>
+`;

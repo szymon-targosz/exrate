@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - SectionHeader Should add external css classes - array 1`] = `
+<header
+  className="section-header bg-secondary border border-info"
+>
+  <h2
+    className="heading-2"
+  >
+    Some interesting text
+  </h2>
+  CHILDREN HERE
+</header>
+`;
+
+exports[`COMPONENT - SectionHeader Should add external css classes - string 1`] = `
+<header
+  className="section-header bg-warning p-s"
+>
+  <h2
+    className="heading-2"
+  >
+    Some interesting text
+  </h2>
+  CHILDREN HERE
+</header>
+`;
+
+exports[`COMPONENT - SectionHeader Should render SectionHeader correctly 1`] = `
+<header
+  className="section-header"
+>
+  <h2
+    className="heading-2"
+  >
+    Some interesting text
+  </h2>
+  CHILDREN HERE
+</header>
+`;

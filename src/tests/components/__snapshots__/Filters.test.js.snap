@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Filters Should render Filters correctly 1`] = `
+<section
+  className="filters"
+>
+  <SectionHeader
+    title="FIlters"
+  />
+  <div
+    className="p-s"
+  >
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "autoComplete": "off",
+          "id": "search-input",
+          "placeholder": "Search",
+          "type": "search",
+          "value": "",
+        }
+      }
+      elementType="input"
+      label={true}
+    />
+    <Input
+      changeHandler={[Function]}
+      config={
+        Object {
+          "value": "alpha",
+        }
+      }
+      cssClasses="input__control--select"
+      elementType="select"
+      options={
+        Array [
+          Object {
+            "text": "Alphabetically",
+            "value": "alpha",
+          },
+          Object {
+            "text": "Ascending",
+            "value": "asc",
+          },
+          Object {
+            "text": "Descending",
+            "value": "desc",
+          },
+        ]
+      }
+    />
+  </div>
+</section>
+`;

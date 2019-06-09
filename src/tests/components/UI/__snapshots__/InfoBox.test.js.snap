@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - InfoBox Should add external css classes - array 1`] = `
+<div
+  className="info-box bg-secondary border border-info"
+>
+  <p
+    className="info-box__description"
+  >
+    Some description
+  </p>
+  <h4>
+    19932.31
+  </h4>
+</div>
+`;
+
+exports[`COMPONENT - InfoBox Should add external css classes - string 1`] = `
+<div
+  className="info-box bg-warning p-s"
+>
+  <p
+    className="info-box__description"
+  >
+    Some description
+  </p>
+  <h4>
+    19932.31
+  </h4>
+</div>
+`;
+
+exports[`COMPONENT - InfoBox Should render InfoBox correctly 1`] = `
+<div
+  className="info-box"
+>
+  <p
+    className="info-box__description"
+  >
+    Some description
+  </p>
+  <h4>
+    19932.31
+  </h4>
+</div>
+`;

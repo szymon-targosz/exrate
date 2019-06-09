@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Input Should add external css classes - array 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__control bg-secondary border border-info"
+    onChange={[MockFunction]}
+    type="text"
+    value="input value"
+  />
+</div>
+`;
+
+exports[`COMPONENT - Input Should add external css classes - string 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__control bg-warning p-s"
+    onChange={[MockFunction]}
+    type="text"
+    value="input value"
+  />
+</div>
+`;
+
+exports[`COMPONENT - Input Should render input type "text" 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__control"
+    onChange={[MockFunction]}
+    type="text"
+    value="input value"
+  />
+</div>
+`;
+
+exports[`COMPONENT - Input Should render input type "text" if the elementType prop is not defined 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__control"
+    onChange={[MockFunction]}
+    type="text"
+    value="input value"
+  />
+</div>
+`;
+
+exports[`COMPONENT - Input Should render input type "text" with label 1`] = `
+<div
+  className="input"
+>
+  <input
+    className="input__control"
+    id="some-input-id"
+    onChange={[MockFunction]}
+    placeholder="placeholder text"
+    type="text"
+    value="input value"
+  />
+  <label
+    className="input__label"
+    htmlFor="some-input-id"
+  >
+    placeholder text
+  </label>
+</div>
+`;
+
+exports[`COMPONENT - Input Should render select element 1`] = `
+<div
+  className="input"
+>
+  <select
+    className="input__control"
+    onChange={[MockFunction]}
+    value="input value"
+  >
+    <option
+      key="asc"
+      value="asc"
+    >
+      ascending
+    </option>
+    <option
+      key="desc"
+      value="desc"
+    >
+      descending
+    </option>
+  </select>
+</div>
+`;

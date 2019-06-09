@@ -1,0 +1,62 @@
+.input {
+   position: relative;
+
+   &:not(:last-child) {
+      margin-bottom: 1.8rem;
+   }
+
+   &__control {
+      background: $dark-blue;
+      border: none;
+      box-shadow: 0 3px darken($dark-blue, 10);
+      border-radius: $radius;
+      color: inherit;
+      display: inline-block;
+      font-family: inherit;
+      font-size: inherit;
+      outline: none;
+      padding: 1.5rem 2rem;
+      transition: $transition;
+      width: 100%;
+
+      &::placeholder {
+         color: darken($off-white, 10);
+      }
+
+      &:focus {
+         box-shadow: 0 3px $primary;
+      }
+
+      &--select {
+         background: $primary;
+         box-shadow: 0 3px darken($primary, 10);
+         color: #fff;
+
+         &:focus {
+            background: darken($primary, 5);
+            box-shadow: 0 3px darken($primary, 10);
+         }
+      }
+
+      &--short {
+         max-width: 18rem;
+      }
+   }
+
+   &__label {
+      color: $primary;
+      font-size: 1.4rem;
+      font-weight: 700;
+      left: 1.5rem;
+      position: absolute;
+      top: -1rem;
+      transition: $transition;
+   }
+
+   &__control:placeholder-shown + &__label {
+      font-size: 1.6rem;
+      opacity: 0;
+      transform: translate(.8rem, 2.5rem);
+      visibility: hidden;
+   }
+}

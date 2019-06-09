@@ -1,0 +1,33 @@
+.transactions {
+   display: flex;
+   flex-direction: column;
+   grid-row: 2 / -1;
+   grid-column: 2 / -1;
+
+   @include respond(md) {
+      grid-column: 1 / -1;
+      grid-row: auto;
+   }
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+   }
+
+   &__list {
+      border-bottom: 1px solid $lighten-blue;
+      flex: 1;
+   }
+
+   &__info {
+      font-style: italic;
+      font-size: 1.4rem;
+      text-align: center;
+   }
+}

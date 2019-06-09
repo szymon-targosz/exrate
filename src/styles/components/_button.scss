@@ -1,0 +1,70 @@
+.btn {
+   background: $primary;
+   border: none;
+   border-radius: $radius;
+   box-shadow: 0 3px darken($primary, 10);
+   color: #fff;
+   display: inline-block;
+   outline: none;
+   font-family: inherit;
+   font-size: inherit;
+   padding: 1.5rem;
+   transition: $transition;
+
+   &:hover,
+   &:focus {
+      background: darken($primary, 5);
+   }
+
+   &:active {
+      box-shadow: 0 1px darken($primary, 10);
+      transform: translateY(2px);
+   }
+
+   &:disabled {
+      opacity: .45;
+   }
+
+   &--link {
+      background: none;
+      box-shadow: none;
+      color: $off-white;
+      margin-left: $m-size;
+      padding: 0;
+      position: relative;
+
+      &:hover,
+      &:focus {
+         background: none;
+         color: darken($off-white, 10);
+
+         &:hover::after,
+         &:focus::after {
+            transform: scaleX(1);
+            visibility: visible;
+         }
+
+         &:disabled:hover::after {
+            transform: scaleX(0);
+            visibility: hidden;
+         }
+      }
+
+      &::after {
+         background: $primary;
+         bottom: 0;
+         content: "";
+         height: 2px;
+         left: 0;
+         position: absolute;
+         transform: scaleX(0);
+         transition: .25s ease-in-out;
+         visibility: hidden;
+         width: 100%;
+      }
+   }
+
+   &--block {
+      width: 100%;
+   }
+}
