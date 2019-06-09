@@ -23,7 +23,7 @@ export class Filters extends Component {
    render() {
       return (
          <section className="filters">
-            <SectionHeader title="FIlters" />
+            <SectionHeader title="Filters" />
             <div className="p-s">
                <Input
                   elementType="input"

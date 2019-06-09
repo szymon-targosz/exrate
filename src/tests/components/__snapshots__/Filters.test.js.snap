@@ -5,7 +5,7 @@ exports[`COMPONENT - Filters Should render Filters correctly 1`] = `
   className="filters"
 >
   <SectionHeader
-    title="FIlters"
+    title="Filters"
   />
   <div
     className="p-s"
